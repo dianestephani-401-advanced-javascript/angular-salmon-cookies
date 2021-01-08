@@ -7,8 +7,8 @@ import { SalesComponent } from '../app/sales/sales.component';
 
 const routes: Routes = [
   {path: '', component: ProofOfLifeComponent},
-  {path: 'Location', component: LocationComponent},
-  {path: 'Sales', component: SalesComponent}
+  {path: 'location', component: LocationComponent},
+  {path: 'sales', component: SalesComponent}
 ];
 
 
