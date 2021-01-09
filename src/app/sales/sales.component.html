@@ -1,4 +1,3 @@
-<p>sales works!</p>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
   <!--- Note that these columns can be defined in any order.
@@ -18,52 +17,7 @@
 
   <!-- Weight Column -->
   <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 6 AM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 7 AM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 8 AM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 9 AM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 10 AM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 11 AM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 12 PM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 1 PM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 2 PM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 3 PM </th>
+    <th mat-header-cell *matHeaderCellDef> Weight </th>
     <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
   </ng-container>
 
@@ -76,3 +30,5 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
+
+
