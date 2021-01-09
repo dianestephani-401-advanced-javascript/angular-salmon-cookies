@@ -5,18 +5,40 @@ export interface PeriodicElement {
   position: number;
   sixAm: number;
   sevenAm: number;
-  symbol: string;
+  // eightAm: number;
+  // nineAm: number;
+  // tenAm: number;
+  // elevenAm: number;
+  // twelvePm: number;
+  // onePm: number;
+  // twoPm: number;
+  // threePm: number;
+  // fourPm: number;
+  // fivePm: number;
+  // sixPm: number;
+  // sevenPm: number;
+
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Seattle', sixAm: 1.0079, sevenAme: 'H'},
-  {position: 2, name: 'Tokyo', sixAm: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Dubai', sixAm: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Paris', sixAm: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Lima', sixAm: 10.811, symbol: 'B'},
-  {position: 6, name: 'Hourly Total', sixAm: 12.0107, symbol: 'C'},
+  {position: 1, name: 'Seattle', sixAm: 1.0079, sevenAm: 5 },
+  {position: 2, name: 'Tokyo', sixAm: 4.0026, sevenAm: 5 },
+  {position: 3, name: 'Dubai', sixAm: 6.941, sevenAm: 5 },
+  {position: 4, name: 'Paris', sixAm: 9.0122, sevenAm: 5 },
+  {position: 5, name: 'Lima', sixAm: 10.811, sevenAm: 5 },
+  {position: 6, name: 'Hourly Total', sixAm: 12.0107, sevenAm: 5 }
 
 ];
+
+// const ELEMENT_DATA: PeriodicElement[] = [
+//   {position: 1, name: 'Seattle', sixAm: 1.0079, sevenAm: 5, eightAm: 2, nineAm: 3},
+//   {position: 2, name: 'Tokyo', sixAm: 4.0026, sevenAm: 5, eightAm: 2, nineAm: 3},
+//   {position: 3, name: 'Dubai', sixAm: 6.941, sevenAm: 5, eightAm: 2, nineAm: 3},
+//   {position: 4, name: 'Paris', sixAm: 9.0122, sevenAm: 5, eightAm: 2, nineAm: 3},
+//   {position: 5, name: 'Lima', sixAm: 10.811, sevenAm: 5, eightAm: 2, nineAm: 3},
+//   {position: 6, name: 'Hourly Total', sixAm: 12.0107, sevenAm: 5, eightAm: 2, nineAm: 3}
+
+// ];
 
 /**
  * @title Basic use of `<table mat-table>`
@@ -30,10 +52,13 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class SalesComponent implements OnInit {
 
   title = 'angular-salmon-cookies';
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['position', 'name', 'sixAm', 'sevenAm'];
   dataSource = ELEMENT_DATA;
   constructor() { }
   ngOnInit(): void {
   }
 }
+
+// tenAm: 4, elevenAm: 5, twelvePm: 6, onePm: 7, twoPm: 8, threePm: 9, fourPm: 10, fivePm: 11, sixPm: 12, sevenPm: 33
+
 
