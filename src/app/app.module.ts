@@ -7,6 +7,10 @@ import { ProofOfLifeComponent } from './proof-of-life/proof-of-life.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LocationComponent } from './location/location.component';
 import { SalesComponent } from './sales/sales.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTableModule } from '@angular/material/table';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +18,14 @@ import { SalesComponent } from './sales/sales.component';
     ProofOfLifeComponent,
     NavbarComponent,
     LocationComponent,
-    SalesComponent
+    SalesComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

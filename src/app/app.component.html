@@ -1,26 +1,26 @@
-<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-  <a class="navbar-brand" href="#">Salmon Cookies</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-    aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/location">Locations</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/sales">Sales</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<mat-toolbar color="primary">
+  <!-- #docregion toolbar-row -->
+    <mat-toolbar-row>
+      <span><a href="" routerLink="/">Home</a></span>
+    </mat-toolbar-row>
+  <!-- #enddocregion toolbar-row -->
+  <!-- #docregion toolbar-position-content -->
+    <mat-toolbar-row>
+      <span><a href="" routerLink="location">Location</a></span>
+      <!-- <span class="example-spacer"></span>
+      <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon"></mat-icon> -->
+    </mat-toolbar-row>
+  <!-- #enddocregion toolbar-position-content -->
+    <mat-toolbar-row>
+      <span><a href="" routerLink="sales">Sales</a></span>
+      <!-- <span class="example-spacer"></span> -->
+      <!-- <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+      <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon> -->
+    </mat-toolbar-row>
+  </mat-toolbar>
 
 
 
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+  
+<router-outlet></router-outlet>
+

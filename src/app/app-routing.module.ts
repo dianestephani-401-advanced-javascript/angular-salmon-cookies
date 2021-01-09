@@ -8,7 +8,9 @@ import { SalesComponent } from '../app/sales/sales.component';
 const routes: Routes = [
   {path: '', component: ProofOfLifeComponent},
   {path: 'location', component: LocationComponent},
-  {path: 'sales', component: SalesComponent}
+  {path: 'sales', component: SalesComponent},
+  {path: 'Navbar', component: NavbarComponent}
+
 ];
 
 

@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatTableModule } from '@angular/material/table';
+
 
 import { SalesComponent } from './sales.component';
 
