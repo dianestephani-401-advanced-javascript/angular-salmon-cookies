@@ -3,54 +3,53 @@ import { Component, OnInit } from '@angular/core';
 export interface PeriodicElement {
   name: string;
   position: number;
-  six: number;
-  seven: number;
-  eight: number;
-  nine: number;
-  ten: number;
-  eleven: number;
-  twelve: number;
-  onepm: number;
-  twopm: number;
-  threepm: number;
-  fourpm: number;
-  fivepm: number;
-  sixpm: number;
-  sevenpm: number;
-  
-  symbol: string;
+  sixAm: number;
+  sevenAm: number;
+  eightAm: number;
+  nineAm: number;
+  tenAm: number;
+  elevenAm: number;
+  twelvePm: number;
+  onePm: number;
+  twoPm: number;
+  threePm: number;
+  fourPm: number;
+  fivePm: number;
+  sixPm: number;
+  sevenPm: number;
+
 }
 
+
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Seattle', six: 10, seven: 6,
-  eight: 10, nine: 10, ten: 9,  eleven: 5, twelve: 5, onepm: 7, twopm: 8, threepm: 11, fourpm: 5, fivepm: 7, sixpm: 8, sevenpm: 9, symbol: 'H'},
-  // {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  // {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  // {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  // {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  // {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  // {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  // {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  // {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  // {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+  {position: 1, name: 'Seattle', sixAm: 1.0079, sevenAm: 5, eightAm: 2, nineAm: 3, tenAm: 4, elevenAm: 5, twelvePm: 6, onePm: 7, twoPm: 8, threePm: 9, fourPm: 10, fivePm: 11, sixPm: 12, sevenPm: 33},
+  {position: 2, name: 'Tokyo', sixAm: 4.0026, sevenAm: 5, eightAm: 2, nineAm: 3, tenAm: 4, elevenAm: 5, twelvePm: 6, onePm: 7, twoPm: 8, threePm: 9, fourPm: 10, fivePm: 11, sixPm: 12, sevenPm: 33},
+  {position: 3, name: 'Dubai', sixAm: 6.941, sevenAm: 5, eightAm: 2, nineAm: 3, tenAm: 4, elevenAm: 5, twelvePm: 6, onePm: 7, twoPm: 8, threePm: 9, fourPm: 10, fivePm: 11, sixPm: 12, sevenPm: 33},
+  {position: 4, name: 'Paris', sixAm: 9.0122, sevenAm: 5, eightAm: 2, nineAm: 3, tenAm: 4, elevenAm: 5, twelvePm: 6, onePm: 7, twoPm: 8, threePm: 9, fourPm: 10, fivePm: 11, sixPm: 12, sevenPm: 33},
+  {position: 5, name: 'Lima', sixAm: 10.811, sevenAm: 5, eightAm: 2, nineAm: 3, tenAm: 4, elevenAm: 5, twelvePm: 6, onePm: 7, twoPm: 8, threePm: 9, fourPm: 10, fivePm: 11, sixPm: 12, sevenPm: 33},
+  {position: 6, name: 'Hourly Total', sixAm: 12.0107, sevenAm: 5, eightAm: 2, nineAm: 3, tenAm: 4, elevenAm: 5, twelvePm: 6, onePm: 7, twoPm: 8, threePm: 9, fourPm: 10, fivePm: 11, sixPm: 12, sevenPm: 33}
+
 ];
 
+/**
+ * @title Basic use of `<table mat-table>`
+ */
 @Component({
   selector: 'app-sales',
   templateUrl: './sales.component.html',
-  styleUrls: ['./sales.component.css']
+  styleUrls: ['./sales.component.css'],
 })
 
-
 export class SalesComponent implements OnInit {
-  
+
   title = 'angular-salmon-cookies';
-  displayedColumns: string[] = ['position', 'name', 'six','seven', 'eight',
-  'nine', 'ten', 'eleven','twelve','onepm','twopm','twopm','threepm','fourpm','fivepm', 'sixpm', 'sevenpm','symbol'];
+  displayedColumns: string[] = ['position', 'name', 'sixAm', 'sevenAm', 'eightAm', 'nineAm', 'tenAm', 'elevenAm', 'twelvePm', 'onePm', 'twoPm', 'threePm', 'fourPm', 'fivePm', 'sixPm', 'sevenPm'];
   dataSource = ELEMENT_DATA;
   constructor() { }
-
   ngOnInit(): void {
   }
-
 }
+
+
+
+

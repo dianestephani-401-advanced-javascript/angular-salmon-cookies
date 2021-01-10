@@ -1,12 +1,11 @@
-<p>sales works!</p>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
   <!--- Note that these columns can be defined in any order.
         The actual rendered columns are set as a property on the row definition" -->
 
-  <!-- Position Column -->
+  <!-- Position Column // Store Number -->
   <ng-container matColumnDef="position">
-    <th mat-header-cell *matHeaderCellDef> No. </th>
+    <th mat-header-cell *matHeaderCellDef> Store No. </th>
     <td mat-cell *matCellDef="let element"> {{element.position}} </td>
   </ng-container>
 
@@ -16,63 +15,92 @@
     <td mat-cell *matCellDef="let element"> {{element.name}} </td>
   </ng-container>
 
-  <!-- Weight Column -->
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 6 AM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+  <!-- six AM Column -->
+  <ng-container matColumnDef="sixAm">
+    <th mat-header-cell *matHeaderCellDef> 6AM </th>
+    <td mat-cell *matCellDef="let element"> {{element.sixAm}} </td>
   </ng-container>
 
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 7 AM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+  <!-- seven AM Column -->
+  <ng-container matColumnDef="sevenAm">
+    <th mat-header-cell *matHeaderCellDef> 7AM </th>
+    <td mat-cell *matCellDef="let element"> {{element.sevenAm}} </td>
   </ng-container>
 
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 8 AM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+  <!-- six AM Column -->
+  <ng-container matColumnDef="eightAm">
+    <th mat-header-cell *matHeaderCellDef> 8AM </th>
+    <td mat-cell *matCellDef="let element"> {{element.eightAm}} </td>
   </ng-container>
 
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 9 AM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+  <!-- six AM Column -->
+  <ng-container matColumnDef="nineAm">
+    <th mat-header-cell *matHeaderCellDef> 9AM </th>
+    <td mat-cell *matCellDef="let element"> {{element.nineAm}} </td>
   </ng-container>
 
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 10 AM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+  <!-- ten AM Column -->
+  <ng-container matColumnDef="tenAm">
+    <th mat-header-cell *matHeaderCellDef> 10AM </th>
+    <td mat-cell *matCellDef="let element"> {{element.tenAm}} </td>
   </ng-container>
 
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 11 AM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+  <!-- eleven AM Column -->
+  <ng-container matColumnDef="elevenAm">
+    <th mat-header-cell *matHeaderCellDef> 11AM </th>
+    <td mat-cell *matCellDef="let element"> {{element.elevenAm}} </td>
   </ng-container>
 
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 12 PM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+   <!-- twelve PM Column -->
+   <ng-container matColumnDef="twelvePm">
+    <th mat-header-cell *matHeaderCellDef> 12PM </th>
+    <td mat-cell *matCellDef="let element"> {{element.twelvePm}} </td>
   </ng-container>
 
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 1 PM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+   <!-- one PM Column -->
+   <ng-container matColumnDef="onePm">
+    <th mat-header-cell *matHeaderCellDef> 1PM </th>
+    <td mat-cell *matCellDef="let element"> {{element.onePm}} </td>
   </ng-container>
 
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 2 PM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+   <!-- two PM Column -->
+   <ng-container matColumnDef="twoPm">
+    <th mat-header-cell *matHeaderCellDef> 2PM </th>
+    <td mat-cell *matCellDef="let element"> {{element.twoPm}} </td>
   </ng-container>
 
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> 3 PM </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+  <!-- three PM Column -->
+  <ng-container matColumnDef="threePm">
+    <th mat-header-cell *matHeaderCellDef> 3PM </th>
+    <td mat-cell *matCellDef="let element"> {{element.threePm}} </td>
   </ng-container>
 
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="symbol">
-    <th mat-header-cell *matHeaderCellDef> Symbol </th>
-    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+  <!-- four PM Column -->
+  <ng-container matColumnDef="fourPm">
+    <th mat-header-cell *matHeaderCellDef> 4PM </th>
+    <td mat-cell *matCellDef="let element"> {{element.fourPm}} </td>
+  </ng-container>
+
+  <!-- five PM Column -->
+  <ng-container matColumnDef="fivePm">
+    <th mat-header-cell *matHeaderCellDef> 5PM </th>
+    <td mat-cell *matCellDef="let element"> {{element.fivePm}} </td>
+  </ng-container>
+
+  <!-- six PM Column -->
+  <ng-container matColumnDef="sixPm">
+    <th mat-header-cell *matHeaderCellDef> 6PM </th>
+    <td mat-cell *matCellDef="let element"> {{element.sixPm}} </td>
+  </ng-container>
+
+  <!-- seven PM Column -->
+  <ng-container matColumnDef="sevenPm">
+    <th mat-header-cell *matHeaderCellDef> 7PM </th>
+    <td mat-cell *matCellDef="let element"> {{element.sevePm}} </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
+
+
