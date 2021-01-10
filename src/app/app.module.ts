@@ -10,6 +10,7 @@ import { SalesComponent } from './sales/sales.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { MatTableModule } from '@angular/material/table';
     MatButtonModule,
     MatToolbarModule,
     MatTableModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
